@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moooork - Personal Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <!-- noise -->
+    <div class="noise"></div>
+
+    <!-- nav -->
+    <nav class="nav">
+        <a href="/" class="nav-logo">
+            <img src="images/logo.png" alt="MOOOORK logo" class="nav-logo-img" />
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#gaming">Gaming</a></li>
+            <li><a href="#stuff">Stuff</a></li>
+            <li><a href="#socials">Socials</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- hero -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="hero-eyebrow">Hey, here's</p>
+            <h1 class="hero-name">moooork<span class="cursor">_</span></h1>
+            <p class="hero-sub">Contemplating · Human · Internet Person</p>
+            <div class="hero-cta">
+                <a href="#about" class="btn btn-primary">Know me?</a>
+                <a href="#socials" class="btn btn-ghost">Socials</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-img-placeholder">
+                <img src="images/avatar.png" alt="Avatar" class="hero-img" onerror="this.style.display='none'" />
+            </div>
+            <div class="hero-glow"></div>
+        </div>
+    </section>
+
+    <!-- about -->
+     <section class="section" id="about">
+        <div class="container">
+            <span class="section-label">// about</span>
+            <h2 class="section-title">Who?</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Just another 1 and 0 on the internet who enjoys random shits, and occasionally making stuff not happen.
+                        This site is my little corner of the web — no algorithm, no feed, just me.
+                    </p>
+                    <p>
+                        I play a bunch of games though not really good at that, sometimes doesn't have opinions on things, and sometimes write or share stuff that doesn't fit anywhere else.
+                    </p>
+                </div>
+                <div class="about-tags">
+                    <span class="tag">📚 Professional Crammer</span>
+                    <span class="tag">🌙 Nocturnal Disaster</span>
+                    <span class="tag">☕ 80% Caffeine, 20% Regret</span>
+                    <span class="tag">⏰ Deadline Speedrunner</span>
+                    <span class="tag">🎮 Respawning IRL</span>
+                    <span class="tag">💤 Sleep Is Optional</span>
+                    <span class="tag">🧠 Brain.exe Not Responding</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- games -->
+    <section class="section section-dark" id="gaming">
+        <div class="container">
+            <span class="section-label">// gaming</span>
+            <h2 class="section-title">Played or Has an account but not really played</h2>
+            <div class="games-grid" id="gamesGrid">
+                <!-- will be populated by js-->
+            </div>
+        </div>
+    </section>
+
+    <!-- stuff -->
+    <section class="section" id="stuff">
+        <div class="container">
+            <span class="section-label">// stuff</span>
+            <h2 class="section-title">Random Stuff</h2>
+            <div class="stuff-grid" id="stuffGrid">
+                    <!-- will be populated by js-->
+            </div>
+        </div>
+    </section>
+
+    <!-- social -->
+    <section class="section section-dark" id="socials">
+        <div class="container">
+            <span class="section-label">// socials</span>
+            <h2 class="section-title">Somewhere Between Online & Gone</h2>
+            <p class="section-desc">I might be scattered or might be stuck. Pick your poison.</p>
+            <div class="socials-grid" id="socialsGrid">
+                    <!-- will be populated by js-->
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p>Made by me, for me. &copy; <span id="year"></span></p>
+        <p class="footer-sub">Built with HTML, CSS & JS — no frameworks needed.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
