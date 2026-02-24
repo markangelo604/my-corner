@@ -29,14 +29,14 @@ const SOCIALS = [
     handle: "moooork",
     url: "https://steamcommunity.com/profiles/76561199211743376",
     icon: "../images/steam.svg",
-    iconEmoji: "",
+    iconEmoji: "♨️",
   },
   {
     name: "Xbox",
     handle: "moooork451",
     url: "https://www.xbox.com/en-US/play/user/moooork451",
     icon: "../images/xbox.svg",
-    iconEmoji: "",
+    iconEmoji: "❎",
   },
 ];
 
