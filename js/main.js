@@ -1,6 +1,4 @@
-/* ============================================
-   CONFIGURATION — Edit these to customize!
-   ============================================ */
+// config
 
 const SOCIALS = [
   {
@@ -40,7 +38,7 @@ const SOCIALS = [
   },
 ];
 
-// --- GAMES ---
+// games
 const GAMES = [
   {
     emoji: "⚔️",
@@ -74,7 +72,7 @@ const GAMES = [
   },
 ];
 
-// --- STUFF / POSTS ---
+// stuf
 const STUFF = [
   {
     category: "QUOTE",
@@ -84,9 +82,6 @@ const STUFF = [
   },
 ];
 
-/* ============================================
-   RENDERERS
-   ============================================ */
 
 function renderSocials() {
   const grid = document.getElementById("socialsGrid");
@@ -143,9 +138,6 @@ function renderStuff() {
   `).join("");
 }
 
-/* ============================================
-   SCROLL REVEAL
-   ============================================ */
 function initScrollReveal() {
   const observer = new IntersectionObserver(
     (entries) => {
@@ -165,9 +157,6 @@ function initScrollReveal() {
   });
 }
 
-/* ============================================
-   NAV — HAMBURGER MENU
-   ============================================ */
 function initNav() {
   const hamburger = document.getElementById("hamburger");
   const navLinks = document.querySelector(".nav-links");
@@ -187,17 +176,12 @@ function initNav() {
   });
 }
 
-/* ============================================
-   FOOTER YEAR
-   ============================================ */
 function setYear() {
   const el = document.getElementById("year");
   if (el) el.textContent = new Date().getFullYear();
 }
 
-/* ============================================
-   INIT
-   ============================================ */
+
 document.addEventListener("DOMContentLoaded", () => {
   renderSocials();
   renderGames();
